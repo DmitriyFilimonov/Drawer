@@ -25,6 +25,11 @@ namespace Drawer
         private void Form1_Load(object sender, EventArgs e)
         {
             mainBitmap = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            pictureBox1.Image = mainBitmap;
+            mainBitmap.SetPixel(50, 56, Color.Red);
+            mainBitmap.SetPixel(51, 56, Color.Red);
+            mainBitmap.SetPixel(50, 57, Color.Red);
+            mainBitmap.SetPixel(51, 57, Color.Red);
         }
     }
 }
